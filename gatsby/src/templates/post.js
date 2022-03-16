@@ -4,8 +4,9 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
+import { MDXProvider } from "@mdx-js/react"
 
-import { Layout, Subline, SEO, PrevNext, MXContentMain, MXContentNav } from '../components'
+import { Layout, Subline, SEO, PrevNext, MXContentMain, MXContentNav, TwimEntry } from '../components'
 
 const Title = styled.h1`
 `
@@ -39,7 +40,9 @@ const Post = ({ pageContext: { postNode, prev, next, posts } }) => {
             {post.author}
           </Subline>
           <PostContent>
-            <MDXRenderer>{postNode.body}</MDXRenderer>
+            <MDXProvider components={TwimEntry}>
+              <MDXRenderer>{postNode.body}</MDXRenderer>
+            </MDXProvider>
           </PostContent>
           <PrevNext prev={prev} next={next} />
         </MXContentMain>
