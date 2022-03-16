@@ -16,6 +16,7 @@ const PostContent = styled.div`
 
 const Post = ({ pageContext: { postNode, prev, next, posts } }) => {
   const post = postNode.frontmatter
+  const shortcodes = { TwimEntry }
 
   var toc
   
@@ -40,7 +41,7 @@ const Post = ({ pageContext: { postNode, prev, next, posts } }) => {
             {post.author}
           </Subline>
           <PostContent>
-            <MDXProvider components={TwimEntry}>
+            <MDXProvider components={ shortcodes }>
               <MDXRenderer>{postNode.body}</MDXRenderer>
             </MDXProvider>
           </PostContent>
