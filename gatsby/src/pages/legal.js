@@ -28,10 +28,7 @@ const Legal = () => {
                     <a href="/legal/copyright-notice">Copyright Notice</a>
                 </li>
                 <li>
-                    <a href="/legal/exceptional-erasure-policy">Exceptional Erasure Policy</a>
-                </li>
-                <li>
-                    <a href="/legal/matrix-org-shop-privacy-notice">Matrix.org Shop Privacy Notice</a>
+                    <a href="/legal/law-enforcement-guidelines">Law Enforcement Guidelines</a>
                 </li>
             </ul>
         </div>

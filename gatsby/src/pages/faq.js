@@ -723,7 +723,7 @@ const Faq = ({ data }) => {
                 <a href="https://matrix.to/#/#matrix:matrix.org">
                   #matrix:matrix.org
                 </a>{" "}
-                aka #matrix on irc.freenode.
+                aka #matrix on irc.libera.chat.
               </p>
               <p>
                 If you're a developer and are looking to get involved with
@@ -734,11 +734,11 @@ const Faq = ({ data }) => {
                 .
               </p>
               <p>
-                If you host a{" "}
-                <a href="https://matrix.to/#/#synapse-community:matrix.org">
-                  #synapse-community:matrix.org
-                </a>
-                .
+                If you host a Synapse homeserver, you can get support in the{" "}
+                <a href="https://matrix.to/#/#synapse:matrix.org">
+                  #synapse:matrix.org
+                </a>{" "}
+                room.
               </p>
               <div className="definition-list">
                 <div className="definition-item definition-room">
@@ -815,7 +815,15 @@ const Faq = ({ data }) => {
                 What clients are available?
               </h4>
               <p>
-                See also:{" "}
+                See also the following lists:{" "}
+                <a href="/clients">
+                  Clients
+                </a>
+                ,{" "}
+                <a href="/clients-matrix">
+                  Clients Matrix
+                </a>
+                , and{" "}
                 <a href="#which-matrix-clients-support-e2e">
                   Which matrix clients support E2E?
                 </a>
@@ -826,8 +834,9 @@ const Faq = ({ data }) => {
                 macro.
               </p>
               <p>
-                The most popular and established client is Element, available on
-                web, desktop, Android and iOS.
+                The most popular and established client is{" "}
+                <a href="https://element.io">Element</a>
+                , available on web, desktop, Android and iOS.
               </p>
               <p>Alternatively you can find a client suitable for you:</p>
               <ul>
@@ -973,11 +982,11 @@ const Faq = ({ data }) => {
               <p>
                 Clients can access any <a href="#definitions">homeserver</a>—you
                 don't have to use matrix.org, though historically it is the
-                largest public homeserver. anchel.nl lists{" "}
-                <a href="https://www.anchel.nl/matrix-publiclist/">
+                largest public homeserver. joinmatrix.org provides a list of{" "}
+                <a href="https://joinmatrix.org/servers/">
                   free public homeservers
                 </a>
-                , and a few other resources for getting started.
+                , as well as a guide for getting started.
               </p>
               <div className="definition-list">
                 <div className="definition-item definition-homeserver">
@@ -1260,7 +1269,7 @@ const Faq = ({ data }) => {
                 Pick the one for your platform, or a 3rd party one if none of
                 the above work for you, and get plugging it in. You'll probably
                 also want to read the{" "}
-                <a href="/docs/howtos/client-server.html">
+                <a href="/docs/guides/client-server-api">
                   Client-Server API HOWTO
                 </a>{" "}
                 too.
@@ -1313,7 +1322,7 @@ const Faq = ({ data }) => {
               </h4>
               <p>
                 See the{" "}
-                <a href="/docs/howtos/client-server.html">
+                <a href="/docs/guides/client-server-api">
                   Client-Server API HOWTO
                 </a>{" "}
                 and the <a href="/docs/api">API docs</a> and{" "}
@@ -1940,8 +1949,12 @@ const Faq = ({ data }) => {
                 there already exist mature Matrix&lt;-&gt;IRC bridges.{" "}
                 <a href="https://github.com/matrix-org/matrix-appservice-irc/">
                   matrix-appservice-irc
-                </a>
-                is currently used by matrix.org to bridge with FreeNode.
+                </a>{" "}
+                is currently used to bridge with{" "}
+                <a href="https://libera.chat/">
+                  Libera.Chat
+                </a>{" "}
+                and many other IRC networks.
               </p>
               <div className="definition-list">
                 <div className="definition-item definition-element">
@@ -2121,7 +2134,7 @@ const Faq = ({ data }) => {
               <p>
                 Yes! An ever increasing number of protocols are being{" "}
                 <a href="#definitions">bridged</a> into Matrix, so if you use
-                something like IRC on Freenode you may well be indirectly
+                something like IRC on Libera.Chat you may well be indirectly
                 benefiting from Matrix, as others may be connected into the IRC
                 channel via Matrix.
               </p>
@@ -2399,23 +2412,30 @@ const Faq = ({ data }) => {
                 >
                   &#128279;
                 </a>{" "}
-                What are communities?
+                What are spaces?
               </h4>
               <p>
-                Groups are now known as communities, they are collections of
-                rooms.{" "}
-                <a href="https://matrix.to/#/+matrix:matrix.org">
-                  +matrix:matrix.org
+                Spaces are a collections of rooms.{" "}
+                <a href="https://matrix.to/#/#community:matrix.org">
+                  #community:matrix.org
                 </a>{" "}
-                is the official community containing rooms managed by the core
-                Matrix team.
+                is the official matrix community space containing rooms managed{" "}
+                by the core Matrix team.
+              </p>
+              <p>
+                Spaces are the replacements for the deprecated communities which{" "}
+                were also known as groups. Other than groups a{" "}
+                <a href="#definitions">space</a> itself is a Room.
               </p>
               <div className="definition-list">
                 <div className="definition-item definition-community">
                   <p>
                     <strong>community</strong>
                   </p>
-                  <p>Communities are collections of rooms.</p>
+                  <p>
+                    Communities are collections of rooms. They have been
+                    replaced by spaces.
+                  </p>
                 </div>
                 <div className="definition-item definition-group">
                   <p>
@@ -2423,7 +2443,16 @@ const Faq = ({ data }) => {
                   </p>
                   <p>
                     Groups are now known as communities, they are collections of
-                    rooms.
+                    rooms. They have been replaced by spaces.
+                  </p>
+                </div>
+                <div className="definition-item definition-space">
+                  <p>
+                    <strong>space</strong>
+                  </p>
+                  <p>
+                    Spaces are collections of rooms as rooms. They replace
+                    communites and groups.
                   </p>
                 </div>
                 <div className="definition-item definition-sigil">
@@ -3160,13 +3189,23 @@ const Faq = ({ data }) => {
                 </tr>
                 <tr>
                   <td>community</td>
-                  <td>Communities are collections of rooms.</td>
+                  <td>
+                    Communities are collections of rooms. They have been
+                    replaced by spaces.
+                  </td>
                 </tr>
                 <tr>
                   <td>group</td>
                   <td>
                     Groups are now known as communities, they are collections of
-                    rooms.
+                    rooms. They have been replaced by spaces.
+                  </td>
+                </tr>
+                <tr>
+                  <td>space</td>
+                  <td>
+                    Spaces are collections of rooms as rooms. They replace
+                    communites and groups.
                   </td>
                 </tr>
                 <tr>

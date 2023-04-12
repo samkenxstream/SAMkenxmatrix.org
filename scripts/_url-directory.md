@@ -62,7 +62,6 @@
 [#SimpleMatrix:matrix.ffslfl.net]: https://matrix.to/#/#SimpleMatrix:matrix.ffslfl.net
 [#smsmatrix:matrix.org]: https://matrix.to/#/#smsmatrix:matrix.org
 [#spectral:encom.eu.org]: https://matrix.to/#/#spectral:encom.eu.org
-[#synapse-community:matrix.org]: https://matrix.to/#/#synapse-community:matrix.org
 [#synapse-netcore-workers:t2bot.io]: https://matrix.to/#/#synapse-netcore-workers:t2bot.io
 [#synapse-py3:matrix.org]: https://matrix.to/#/#synapse-py3:matrix.org
 [#synapse:matrix.org]: https://matrix.to/#/#synapse:matrix.org
@@ -151,6 +150,7 @@
 [kotlin-matrix-userbots]: https://github.com/koma-im/kotlin-matrix-userbots
 [Krille]: https://matrix.to/#/@krille:chat.regionetz.net
 [krombel]: https://matrix.to/#/@krombel:msg-net.de
+[Libera.Chat]: https://libera.chat/
 [libQMatrixClient]: https://github.com/QMatrixClient/libqmatrixclient
 [Linda]: https://matrix.to/#/@lindalap:matrix.org
 [linuxgaming.life]: https://linuxgaming.life
@@ -195,7 +195,6 @@
 [matrix-nio]: https://github.com/poljar/matrix-nio
 [matrix-puppet-bridge]: https://github.com/matrix-hacks/matrix-puppet-bridge/
 [matrix-puppet-facebook]: https://github.com/matrix-hacks/matrix-puppet-facebook
-[matrix-puppet-hangouts]: https://github.com/matrix-hacks/matrix-puppet-hangouts/
 [matrix-puppet-slack]: https://github.com/matrix-hacks/matrix-puppet-slack
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk

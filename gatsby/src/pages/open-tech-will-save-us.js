@@ -11,8 +11,9 @@ import moment from "moment";
 
 const title = `Open Tech Will Save Us | ${config.siteTitle}`;
 
+
 const SHOW_LIVE_STREAM = false;
-const NEXT_EVENT = 15;
+const NEXT_EVENT = 21;
 
 let liveStream;
 if (SHOW_LIVE_STREAM) {
@@ -25,13 +26,13 @@ if (SHOW_LIVE_STREAM) {
         controls
       ></video><br />
       <strong><a href="https://stream.matrix.org">Watch on stream.matrix.org</a></strong><br />
-      <strong><a href="https://www.youtube.com/watch?v=X3vx4Ad7PtI">Find the stream at https://www.youtube.com/watch?v=X3vx4Ad7PtI</a></strong>
+      <strong><a href="https://youtube.com/watch?v=Uunj5mDtt1s">Find the stream at https://youtube.com/watch?v=Uunj5mDtt1s</a></strong>
       <script src="/js/hls.light.min.js"></script>
       <script src="/js/livestream.js"></script>
     </div>
   );
 } else {
-  liveStream = <img src="/images/otwsu15.png" alt="Open Tech Will Save Us" />;
+  liveStream = <img src="/images/otwsu21.png" alt="Open Tech Will Save Us" />;
 }
 
 const OTWSU = ({ data }) => {
@@ -47,7 +48,7 @@ const OTWSU = ({ data }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
-          content="https://matrix.org/images/otwsu15.png"
+          content="https://matrix.org/images/otwsu21.png"
         />
       </Helmet>
       <div>
@@ -77,7 +78,7 @@ const OTWSU = ({ data }) => {
           <h3>{moment.utc(nextEvent.node.frontmatter.eventdate).format('Do MMMM YYYY')}</h3>
           <p>
             Return to this page at the specified time to watch the stream.
-            You can also <a href="https://user.fm/calendar/v1-2f5c614bd642751481ef4aedc83fee95/Matrix%20Public%20Events.ics">add us to your calendar</a>.
+            You can also <a href="https://www.google.com/url?q=https://calendar.google.com/calendar/ical/c_6ns9uddvmgqpop6l7qfna32dcc%2540group.calendar.google.com/public/basic.ics&source=gmail-imap&ust=1659090704000000&usg=AOvVaw2DVHjn4SycYX9yjODwcZu7">add us to your calendar</a>.
           </p>
           <MDXRenderer>{nextEvent.node.body}</MDXRenderer>
         </div>

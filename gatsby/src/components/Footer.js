@@ -38,11 +38,12 @@ const Footer = () => (
         <a href="/faq/" className="mxfooter__link">FAQs</a>
         <a href="/matrixlive/" className="mxfooter__link">Matrix Live</a>
         <a href="/security-disclosure-policy/" className="mxfooter__link">Security Disclosure Policy</a>
+        <a href="/hall-of-fame/" className="mxfooter__link">Security Hall of Fame</a>
         <a href="/legal/code-of-conduct/" className="mxfooter__link">Code of Conduct for Matrix.org</a>
         <a href="/legal/" className="mxfooter__link">Legal</a>
         <a href="/contact/" className="mxfooter__link">Contact</a>
         <a href="https://github.com/matrix-org/matrix.org/" className="mxfooter__link">Site Source</a>
-        
+
       </div>
     </div>
     <div className="mxfooter__container mxfooter__container--heel">
@@ -59,8 +60,11 @@ const Footer = () => (
         <a href="https://twitter.com/matrixdotorg" className="w-inline-block">
           <img src="/images/twitter.svg" alt="" className="mxfooter__icon" />
         </a>
+        <a rel="me" href="https://mastodon.matrix.org/@matrix" className="w-inline-block">
+          <img src="/images/mastodon.svg" alt="" className="mxfooter__icon" />
+        </a>
       </div>
-      <p className="mxfooter__text">© 2021 The Matrix.org Foundation C.I.C.</p>
+      <a href="/legal/copyright-notice" class="mxfooter__link">Copyright Notice</a>
     </div>
   </div>
 

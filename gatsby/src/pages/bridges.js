@@ -31,7 +31,6 @@ const Bridges = ({ data }) => {
 ["SMS", "sms"],
 ["Telegram", "telegram"],
 ["WhatsApp", "whatsapp"],
-["Google Hangouts", "google-hangouts"],
 ["Google Chat", "google-chat"],
 ["Mastodon", "mastodon"],
 ["Mattermost", "mattermost"],
@@ -48,6 +47,8 @@ const Bridges = ({ data }) => {
 ["Tencent QQ", "tencent-qq"],
 ["LINE", "line"],
 ["LinkedIn Messaging", "linkedin"],
+["KakaoTalk", "kakaotalk"],
+["Gupshup", "gupshup"],
   ];
 
   

@@ -6,6 +6,10 @@ extend-exclude = [
 	"/gatsby/content/blog/2020/12/2020-12-18-a-twim.mdx", # contains intentional typos
 	"/gatsby/content/blog/2021/09/2021-09-17-twim.mdx", # contains French, for some reason
 	"/gatsby/content/blog/2022/01/2022-01-21-twim.mdx", # pings scoreboard triggers the typo CI
+    "/gatsby/content/blog/2022/05/2022-05-13-twim.mdx", # typo found in a url
+	"/gatsby/content/blog/2022/07/2022-07-08-twim.mdx", # whos in that room
+	"/gatsby/content/blog/2022/08/2022-08-12-twim.mdx", # tha'
+	"/gatsby/content/blog/2022/12/2022-12-16-twim.mdx", # name triggers error
 	"*signed*.txt", # can be removed once https://github.com/crate-ci/typos/issues/401 is fixed
 	"synapse-debian-security-announcement.asc" # has typo but cannot fix due to PGP signature
 ]
@@ -28,6 +32,7 @@ inex = "inex"
 Konversation = "Konversation"
 oder = "oder"
 onl = "onl"
+tbe = "tbe" # part of youtube video ID
 clos = "clos" # can be changed to json-clos once https://github.com/crate-ci/typos/issues/400 is fixed
 ehr = "ehr" # can be changed to Fuj'ehr once https://github.com/crate-ci/typos/issues/400 is fixed
 ist = "ist" # can be changed to raim.ist once https://github.com/crate-ci/typos/issues/400 is fixed
